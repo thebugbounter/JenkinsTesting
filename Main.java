@@ -4,7 +4,7 @@ class Main {
     int n = 1, firstTerm = 0, secondTerm = 1;
     System.out.println("Fibonacci Series till " + n + " terms:");
 
-    for (int i = 1; i <= n; ++i) {
+    for (int i = 1; i <= 100; ++i) {
       System.out.print(firstTerm + ", ");
 
       // compute the next term
