@@ -1,14 +1,14 @@
-# Python program to check if the number is an Armstrong number or not
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
 
-num = int(input("Enter a number: "))
-sum = 0
+nterms = 10
 
-temp = num
-while temp > 0:
-   digit = temp % 10
-   sum += digit ** 3
-   temp //= 10
-if num == sum:
-   print(num,"is an Armstrong number")
+if nterms <= 0:
+   print("Plese enter a positive integer")
 else:
-   print(num,"is not an Armstrong number")
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(recur_fibo(i))
